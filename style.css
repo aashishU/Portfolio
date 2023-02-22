@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+/*---------- Navigation Bar ----------*/
+
+.nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index:1;
+    background-color: rgb(10, 21, 55);
+    opacity: 75%;
+}
+
+.nav-logo{
+    text-decoration: none;
+    font-size: large;
+    color:rgb(203, 214, 246);
+    margin-left: 2vw;
+}
+
+.nav-logo:hover {
+    color: rgb(90, 196, 246);
+    text-decoration: underline;
+}
+
+.nav-menu{
+    width: 80vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-item > a{
+    color: rgb(203, 214, 246);
+    font-size: medium;
+    margin: 0 1vw;
+    text-decoration: none;
+}
+
+.nav-item >a:hover{
+    color: rgb(90, 196, 246);
+    text-decoration: underline;
+}
+
+.nav-button {
+    margin-left: 2em;
+    height: 2em;
+    font-size: medium;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(75, 190, 243);
+    border-radius: 5px;
+    background: none;
+    text-decoration: none;
+}
+
+.nav-button:hover{
+    background-color: white;
+    border-color: white;
+}
+
+.nav-button > a:hover{
+    color: rgb(10, 21, 55);
+}
+
+.nav-button > a {
+    font-size: medium;
+    padding: 0 0.7em;
+    text-decoration: none;
+    color: rgb(90, 196, 246);
+}
+
+/*---------- Links (on the left side of the page) ----------*/
+
+.side-menu {
+    position: fixed;
+    margin-top: 75vh;
+    left: 95px;
+}
+
+.link-item {
+    margin-top: 1vh;
+}
+
+.link-item:hover{
+    background-color: rgb(90, 196, 246);
+    border-radius: 20px;
+}
+
+.line{
+    display: block;
+    position: fixed;
+    width: 1px;
+    height: 30vh;
+    left: 107px;
+    margin-top: 38vh;
+    background-color: rgb(203, 214, 246);
+}
+
+/*---------- E-mail (on the right side of the page) ----------*/
+
+.mail-right{
+    display: inline;
+    position: fixed;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    rotate: 90deg;
+    margin: 50vh 73vw;
+}
+
+.mail{
+    text-decoration: none;
+    font-size: .8em;
+    font-weight: 370;
+    color: rgb(203, 214, 246);
+    letter-spacing: 7px;
+}
+
+.mail:hover {
+    color: rgb(90, 196, 246);
+}
+
+.line2{
+    display: inline;
+    position: fixed;
+    width: 1px;
+    height: 30vh;
+    right: 105px;
+    margin-top: 58vh;
+    background-color: rgb(203, 214, 246);
+}
+
+/*---------- Body position ----------*/
+
+.bg-body {
+    display: flex;
+    background-color: rgb(10, 21, 55);
+}
+
+.body {
+    margin:  9vh 20vw;
+}
+
+/*---------- Rules for intro paragraph ----------*/
+
+.intro-para {
+    margin-top: 3vh;
+    font-size: 1.1em;
+    font-weight: 370;
+    width: 50vw;
+}
+
+/*---------- Position of each Sub-heading ----------*/
+
+.position {
+    margin-top: 14vh;
+    margin-left: 2vw;
+}
+
+h3{
+    margin: 5vh 0;
+}
+
+p {
+    color: rgb(135, 146, 176);
+    margin-right: 20vw;
+    font-size: 1.1em;
+    font-weight: 370;
+    letter-spacing: .5px;
+}
+
+.about-para {
+    width: 40vw;
+    margin-left: 40px;
+}
+
+/*---------- Introduction ----------*/
+
+.small-title {
+    display: inline;
+    font-size: 1.5em;
+    font-weight: 370;
+}
+
+.my-name {
+    font-size: 4.3em;
+    color: rgb(203, 214, 246);
+    font-weight: 500;
+    margin-top: 3vh;
+}
+
+.medium-title {
+    color: rgb(135, 146, 176);
+    font-size: 4.5em;
+    font-weight: 500;
+    margin-top: 2vh;
+}
+
+.blue {
+    color: rgb(90, 196, 246);
+    
+}
+
+.blue:hover {
+    text-decoration: underline;
+}
+
+.white {
+    color: rgb(203, 214, 246);
+}
+
+.sub-heading {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/*---------- Profile Picture ----------*/
+
+.pic{
+    display:inline;
+    position:absolute;
+    margin-left: 50vw;
+    margin-top: 31vh;
+}
+
+.main-pic {
+    display:inline-flex;
+    position:absolute;
+}
+
+.shadow {
+    display: inline-flex;
+    background-color: rgb(90, 196, 246);
+    padding: 118px 80px;
+    margin-top: 20px;
+    margin-left: 18px;
+}
+
+/*---------- Horizontal line after each heading ----------*/
+
+.line-small{
+    display:inline;
+    position:absolute;
+    height: .5px;
+    width: 30vw;
+    margin: 6.5vh 10vw;
+    background-color: rgb(135, 146, 176);
+}
+
+/*---------- Work Exp ----------*/
+
+.text {
+    color: rgb(135, 146, 176);
+    margin-right: 20vw;
+    font-size: 1.1em;
+    font-weight: 370;
+    letter-spacing: 1px;
+    width: 40vw;
+}
+
+.company {
+    color: rgb(135, 146, 176);
+    margin-top: 30px;
+}
+
+.date {
+    color: rgb(135, 146, 176);
+    font-weight: 300;
+}
+
+.exp {
+    margin-left: 40px;
+    margin-top: 20px;
+    list-style-type: disc;
+}
+
+#work-exp > .line-small {
+    width: 25vw;
+    margin-left: 15vw;
+}
+
+/*---------- Education ----------*/
+
+.degree {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 30vw;
+}
+
+.edu-date {
+    font-size: .9em;
+    margin-left: 40px;
+}
+
+/*---------- Project 1 ----------*/
+
+.project1-pic {
+    position: relative;
+}
+
+.project1-heading-pos {
+    display: inline;
+    position: absolute;
+    width: 400px;
+    margin: 14vh 45vw;
+}
+
+.project1-box-pos {
+    display: inline;
+    position: absolute;
+    border-radius: 5px;
+    margin: 20vh 30vw;
+    z-index: 1;
+}
+
+.project1-pic:hover {
+    box-shadow: 1px 1px 8px 1px whitesmoke;
+}
+
+/*---------- Project 2 ----------*/
+
+.project2-heading-pos {
+    display: inline;
+    position: absolute;
+    margin: 46vh -5vw;
+}
+
+.project2-pic {
+    margin: 20vh 20vw;
+}
+
+.project2-pic:hover {
+    box-shadow: 1px 1px 8px 1px whitesmoke;
+}
+
+.project2-box-pos {
+    display: inline;
+    position: absolute;
+    border-radius: 5px;
+    margin: 52vh -7vw;
+}
+
+/*---------- Project 3 ----------*/
+
+.project3-heading-pos {
+    display: inline;
+    position: absolute;
+    margin: 14vh 50vw;
+    width: 150px;
+}
+
+.project3-box-pos {
+    display: inline;
+    position: absolute;
+    border-radius: 5px;
+    margin: 20vh 30vw;
+}
+
+.project3-pic:hover {
+    box-shadow: 1px 1px 8px 1px whitesmoke;
+}
+
+/*---------- Common Project Properties ----------*/
+
+.project-dis {
+    color: rgb(135, 146, 176);
+    background-color: rgb(16, 33, 86);
+    width: 30vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    list-style-type: disc;
+    padding: 25px;
+    border-radius: 7px;
+}
+
+/*---------- Skills ----------*/
+
+.skills {
+    display: flex;
+}
+
+.skill-head {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.skill-head:hover {
+    text-decoration: none;
+}
+
+.box-pos {
+    width: 200px;
+    height: 400px;;
+    margin: 8vh 25px;
+}
+
+.skill-set {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skill-set >li {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
